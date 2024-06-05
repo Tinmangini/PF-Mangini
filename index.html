@@ -8,6 +8,8 @@
     <title>Maria Julia Wines - Vinos Con Historia</title>
     <link rel="shortcut icon" href="assets/img/iconos/logo 1.jpeg" type="image/x icon">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -15,24 +17,29 @@
         <p>Pedidos al 351-229-8721</p>
     </div>
     <header class="cabezera">
-        <nav>
-            <a href="#">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
                 <img src="assets/img/maria julia.jpeg" alt="logo de Maria Julia Wines" class="cabezera__img--m">
             </a>
-            <ul class="nav__list">
-                <li>
-                    <a href="pages/comocomprar.html" class="nav__list--W">Cómo Comprar</a>
-                </li>
-                <li>
-                    <a href="pages/productos.html" class="nav__list--W">Productos</a>
-                </li>
-                <li>
-                    <a href="pages/nosotros.html" class="nav__list--W">Nosotros</a>
-                </li>
-                <li>
-                    <a href="pages/presupuestos.html" class="nav__list--W">Presupuestos</a>
-                </li>
-            </ul>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/comocomprar.html">Cómo Comprar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/presupuestos.html">Presupuestos</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -42,7 +49,7 @@
         <section class="cuerpe">
             <h1 class="cuerpe__tittle--l">VINOS CON HISTORIA</h1>
             <p class="cuerpe__text--m"> Somos la mejor tienda de vinos de la net </p>
-</section>
+        </section>
 
         <section class="productos">
             <h2 class="productos__tittle">PRODUCTOS</h2>
@@ -55,24 +62,24 @@
                         <span class="tarjeta__1--precio">$61.630</span>
                         <a href="#" class="btn">Comprar</a>
                     </div>
-                    <div>
-                        <article class="tarjeta__2">
-                            <img src="assets/img/vinos/espumantes/Baron B nature.jpg"
-                                alt="Vino espumante Baron B brut nature" class="imgTarjeta__1">
-                            <div class="tarjeta__2--body">
-                                <h3 class="tarjeta__2--tittle">Baron B Brut Nature</h3>
-                                <span class="tarjeta__2--precio">$22.699</span>
-                                <a href="#" class="btn">Comprar</a>
-                            </div>
-                            <div>
-                                <article class="tarjeta__3">
-                                    <img src="assets/img/vinos/blancos/Dedicado blanco.jpeg"
-                                        alt="Vino blanco Dedicado Tupungato chardonnay" class="imgTarjeta__1">
-                                    <div class="tarjeta__3--body">
-                                        <h3 class="tarjeta__3--tittle">Dedicado Tupungato Chardonnay</h3>
-                                        <span class="tarjeta__3--precio">$18.240</span>
-                                        <a href="#" class="btn">Comprar</a>
-                                    </div>
+                </article>
+                <article class="tarjeta__2">
+                    <img src="assets/img/vinos/espumantes/Baron B nature.jpg"
+                        alt="Vino espumante Baron B brut nature" class="imgTarjeta__1">
+                    <div class="tarjeta__2--body">
+                        <h3 class="tarjeta__2--tittle">Baron B Brut Nature</h3>
+                        <span class="tarjeta__2--precio">$22.699</span>
+                        <a href="#" class="btn">Comprar</a>
+                    </div>
+                </article>
+                <article class="tarjeta__3">
+                    <img src="assets/img/vinos/blancos/Dedicado blanco.jpeg"
+                        alt="Vino blanco Dedicado Tupungato chardonnay" class="imgTarjeta__1">
+                    <div class="tarjeta__3--body">
+                        <h3 class="tarjeta__3--tittle">Dedicado Tupungato Chardonnay</h3>
+                        <span class="tarjeta__3--precio">$18.240</span>
+                        <a href="#" class="btn">Comprar</a>
+                    </div>
                 </article>
             </div>
         </section>
@@ -90,6 +97,11 @@
             <img src="assets/img/iconos/facebook ic.png" alt="Seguinos en Facebook" class="pie__icon--s">
         </a>
     </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

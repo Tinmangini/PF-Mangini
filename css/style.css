@@ -189,7 +189,7 @@ form input, form textarea {
 .imgTarjeta__1,
 .imgTarjeta__2, 
 .imgTarjeta__3 {
-    width: 22%;
+    width: 50%;
 }
 
 
@@ -209,7 +209,7 @@ form input, form textarea {
 .tarjeta__1--precio,
 .tarjeta__2--precio,
 .tarjeta__3--precio {
-    padding: 70px;
+    padding: 30px;
     display: grid;
     justify-self: center;
     align-items: center;
@@ -314,3 +314,5 @@ form input, form textarea {
         line-height: 2.5rem;
     }
 }
+
+/*# sourceMappingURL=style.css.map */
