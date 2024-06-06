@@ -1,0 +1,23 @@
+@mixin text-style($color, $bg-color, $padding: 10px, $font-size: null) {
+    color: $color;
+    background-color: $bg-color;
+    padding: $padding;
+    @if $font-size {
+        font-size: $font-size;
+    }
+}
+
+@mixin responsive-text($h1-size, $h2-size, $h3-size, $span-size) {
+    h1 {
+        font-size: $h1-size;
+    }
+    h2 {
+        font-size: $h2-size;
+    }
+    h3 {
+        font-size: $h3-size;
+    }
+    span {
+        font-size: $span-size;
+    }
+}

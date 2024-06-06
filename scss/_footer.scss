@@ -1,0 +1,16 @@
+.pie {
+    text-align: center;
+    padding: 10px;
+    width: 90%;
+    margin: 20px auto;
+    .pie__titulo--l,
+    .productos__tittle {
+        font-weight: 500;
+        font-size: 2rem;
+        padding: 10px;
+    }
+    .pie__icon--s {
+        width: 40px;
+        margin: 5px;
+    }
+}

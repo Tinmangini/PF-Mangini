@@ -1,0 +1,16 @@
+form {
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+        label {
+            font-size: 2rem;
+            display: block;
+            margin-bottom: 10px;
+        }
+        input,
+        textarea {
+            margin-bottom: 20px;
+            width: 100%;
+            display: block;
+        }
+}

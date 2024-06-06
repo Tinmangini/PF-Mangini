@@ -1,0 +1,30 @@
+.productos {
+    padding: 20px 20px;
+    .tarjetas {
+        display: flex;
+        gap: 10px;
+        background-color: #ffffff;
+        .tarjeta__1,
+        .tarjeta__2,
+        .tarjeta__3 {
+            display: flex;
+            padding: 10px;
+        .imgTarjeta__1,
+        .imgTarjeta__2,
+        .imgTarjeta__3 {
+            width: 50%;
+        }
+        &--body {
+            padding: 30px;
+            display: grid;
+            justify-self: center;
+            align-items: center;
+            background-color: #ffffff;
+        }
+        &--tittle,
+        &--precio {
+            @include text-style(#000000, #ffffff);
+        }
+        }
+    }
+}

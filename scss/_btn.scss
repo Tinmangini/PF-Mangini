@@ -1,0 +1,14 @@
+.btn {
+    display: grid;
+    background-color: #ffffff;
+    align-self: center;
+    padding: 3px 3px;
+    border-radius: 15px;
+    justify-self: center;
+    text-decoration: none;
+    
+    &:hover {
+        background-color: #8c8c8c;
+        color: #000000;
+    }
+}

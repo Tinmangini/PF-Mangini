@@ -1,0 +1,32 @@
+.cuerpe {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+        .cuerpe__tittle--l,
+        .nosotrx__tittle--l {
+            text-align: center;
+            padding: 1px;
+            width: 90%;
+            margin: auto;
+        }
+        .cuerpe__text--m,
+        .nosotrx__text--l {
+            text-align: center;
+            font-weight: 100;
+            line-height: 5rem;
+            font-size: 2rem;
+            margin: 10px;
+            opacity: 0.9;
+            padding: 10px;
+        }
+        .cuerpe__table--m {
+            text-align: center;
+            font-weight: 100;
+            line-height: 5rem;
+            font-size: 2rem;
+            margin: 20px auto;
+            opacity: 0.9;
+            border: none;
+            width: 80%;
+        }
+}
