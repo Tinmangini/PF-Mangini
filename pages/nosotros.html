@@ -1,74 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maria Julia Wines - Vinos Con Historia</title>
-    <link rel="shortcut icon" href="../assets/img/iconos/logo 1.jpeg" type="image/x icon">
+    <meta name="description" content="Maria Julia Wines ofrece una selección de vinos tintos, blancos y espumantes con historia. Descubre nuestra historia y productos.">
+    <meta name="keywords" content="vinos, tienda de vinos, comprar vino, vinos tintos, vinos blancos, espumantes, Maria Julia Wines">
+    <meta name="author" content="Maria Julia Wines">
+    <link rel="shortcut icon" href="../assets/img/iconos/logo 1.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Maria Julia Wines - Vinos Con Historia">
+    <meta property="og:description" content="Maria Julia Wines ofrece una selección de vinos tintos, blancos y espumantes con historia. Descubre nuestra historia y productos.">
+    <meta property="og:image" content="../assets/img/maria julia.jpeg">
+    <meta property="og:url" content="https://www.mariajuliawines.com">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Maria Julia Wines - Vinos Con Historia">
+    <meta name="twitter:description" content="Maria Julia Wines ofrece una selección de vinos tintos, blancos y espumantes con historia. Descubre nuestra historia y productos.">
+    <meta name="twitter:image" content="../assets/img/maria julia.jpeg">
 </head>
-<body> 
+
+<body>
     <div class="anuncio__box--some">
         <p>Pedidos al 351-229-8721</p>
     </div>
     <header class="cabezera">
-        <nav>
-            <a href="../index.html">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="../index.html">
                 <img src="../assets/img/maria julia.jpeg" alt="logo de Maria Julia Wines" class="cabezera__img--m">
-            </a>  
-            <ul class="nav__list">
-                <li>
-                    <a href="comocomprar.html" class="nav__list--W">Cómo Comprar</a>
-                </li>
-                <li>
-                    <a href="productos.html" class="nav__list--W">Productos</a>
-                </li>
-                <li>
-                    <a href="#" class="nav__list--W">Nosotros</a>
-                </li>
-                <li>
-                    <a href="presupuestos.html" class="nav__list--W">Presupuestos</a>
-                </li>
-            </ul>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/comocomprar.html">Cómo Comprar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/presupuestos.html">Presupuestos</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <img src="../assets/img/Fondo.jpg" alt="botellas de vino en gondola" class="cuerpo__img--entera">
+    <img src="../assets/img/Fondo.jpg" alt="Botellas de vino en góndola" class="cuerpo__img--entera">
 
     <!-- ends header -->
     <main>
         <section class="nosotrx">
             <h1 class="nosotrx__tittle--l">Nosotros</h1>
-            <p class="nosotrx__text--l"> 1883
-                • Maria Julia Alonso llega a la Argentina, proveniente de un pueblo llamado San Pietro, Italia, donde cultivaba junto a su familia predios con viñas y olivos. Decidió instalar sus viñedos en el país y escapar así de una devastadora plaga, la filoxera, que afectaba a las vides en Europa.
-                
-                1889
-                • Trabajando y ahorrando al máximo, logró traer a su hermano Tomassino, y poco tiempo después, a su madre Marta y a sus hermanos Carlos y Elvira. Lejos de su tierra, pero juntos nuevamente, la tradición vitivinícola no tardó en aflorar.
-                
-                1898
-                • Los hermanos se trasladaron a Mendoza, donde arrendaron una pequeña extensión de tierra en General Gutiérrez, Maipú. Bajo la dirección de Maria Julia, comienzan la elaboración de sus vinos, producidos con cepas propias.
-                En poco tiempo, los hermanos Alonso lograron hacerse de una clientela sólida, que les permitió formalizar su primera sociedad comercial:
-                Alonso Wines. Hnos.
-                
-                2023
-                • Maria Julia Alonso esta en nuestros corazones y habrimos una sucursal para la venta al publico minorista en su nombre para manter más vivo que nunca su nombre y el linaje de la familia.
+            <p class="nosotrx__text--l">
+                1883 • Maria Julia Alonso llega a la Argentina, proveniente de un pueblo llamado San Pietro, Italia, donde cultivaba junto a su familia predios con viñas y olivos. Decidió instalar sus viñedos en el país y escapar así de una devastadora plaga, la filoxera, que afectaba a las vides en Europa.
+                <br><br>
+                1889 • Trabajando y ahorrando al máximo, logró traer a su hermano Tomassino, y poco tiempo después, a su madre Marta y a sus hermanos Carlos y Elvira. Lejos de su tierra, pero juntos nuevamente, la tradición vitivinícola no tardó en aflorar.
+                <br><br>
+                1898 • Los hermanos se trasladaron a Mendoza, donde arrendaron una pequeña extensión de tierra en General Gutiérrez, Maipú. Bajo la dirección de Maria Julia, comienzan la elaboración de sus vinos, producidos con cepas propias.
+                <br><br>
+                En poco tiempo, los hermanos Alonso lograron hacerse de una clientela sólida, que les permitió formalizar su primera sociedad comercial: Alonso Wines. Hnos.
+                <br><br>
+                2023 • Maria Julia Alonso está en nuestros corazones y abrimos una sucursal para la venta al público minorista en su nombre para mantener más vivo que nunca su nombre y el linaje de la familia.
             </p>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/ydq5cnpGMtU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/ydq5cnpGMtU" title="Historia de Maria Julia Wines" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </section>
         <!-- ends intro -->
     </main>
     <!-- ends main -->
     <footer class="pie">
-        <h3 class="pie__titulo--l">Buscanos en nuestras redes</h3>
+        <h2 class="pie__titulo--l">Búscanos en nuestras redes</h2>
         <a href="https://www.whatsapp.com/?lang=es" target="_blank">
-            <img src="../assets/img/iconos/whatsapp ic.png" alt="Hablanos por WhatsApp" class="pie__icon--s">
+            <img src="../assets/img/iconos/whatsapp ic.png" alt="Háblanos por WhatsApp" class="pie__icon--s">
         </a>
         <a href="https://www.instagram.com/" target="_blank">
-            <img src="../assets/img/iconos/instagram ic.png" alt="Seguinos en Instagram" class="pie__icon--s">
+            <img src="../assets/img/iconos/instagram ic.png" alt="Síguenos en Instagram" class="pie__icon--s">
         </a>
         <a href="https://www.facebook.com/" target="_blank">
-            <img src="../assets/img/iconos/facebook ic.png" alt="Seguinos en Facebook" class="pie__icon--s">
+            <img src="../assets/img/iconos/facebook ic.png" alt="Síguenos en Facebook" class="pie__icon--s">
         </a>
     </footer>
 </body>

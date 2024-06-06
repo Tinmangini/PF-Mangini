@@ -1,67 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maria Julia Wines - Vinos Con Historia</title>
-    <link rel="shortcut icon" href="../assets/img/iconos/logo 1.jpeg" type="image/x icon">
+    <meta name="description" content="Maria Julia Wines ofrece una selección de vinos tintos, blancos y espumantes con historia. Descubre y compra nuestros vinos online.">
+    <meta name="keywords" content="vinos, tienda de vinos, comprar vino, vinos tintos, vinos blancos, espumantes, Maria Julia Wines">
+    <meta name="author" content="Maria Julia Wines">
+    <link rel="shortcut icon" href="../assets/img/iconos/logo 1.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Maria Julia Wines - Vinos Con Historia">
+    <meta property="og:description" content="Maria Julia Wines ofrece una selección de vinos tintos, blancos y espumantes con historia. Descubre y compra nuestros vinos online.">
+    <meta property="og:image" content="../assets/img/maria julia.jpeg">
+    <meta property="og:url" content="https://www.mariajuliawines.com">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Maria Julia Wines - Vinos Con Historia">
+    <meta name="twitter:description" content="Maria Julia Wines ofrece una selección de vinos tintos, blancos y espumantes con historia. Descubre y compra nuestros vinos online.">
+    <meta name="twitter:image" content="../assets/img/maria julia.jpeg">
 </head>
-<body> 
+
+<body>
     <div class="anuncio__box--some">
         <p>Pedidos al 351-229-8721</p>
     </div>
     <header class="cabezera">
-        <nav>
-            <a href="../index.html">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="../index.html">
                 <img src="../assets/img/maria julia.jpeg" alt="logo de Maria Julia Wines" class="cabezera__img--m">
-            </a>  
-            <ul class="nav__list">
-                <li>
-                    <a href="comocomprar.html" class="nav__list--W">Cómo Comprar</a>
-                </li>
-                <li>
-                    <a href="productos.html" class="nav__list--W">Productos</a>
-                </li>
-                <li>
-                    <a href="nosotros.html" class="nav__list--W">Nosotros</a>
-                </li>
-                <li>
-                    <a href="#" class="nav__list--W">Presupuestos</a>
-                </li>
-            </ul>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/comocomprar.html">Cómo Comprar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/presupuestos.html">Presupuestos</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <img src="../assets/img/Fondo.jpg" alt="botellas de vino en gondola" class="cuerpo__img--entera">
-
+    <img src="../assets/img/Fondo.jpg" alt="botellas de vino en góndola" class="cuerpo__img--entera">
     <!-- ends header -->
+
     <main>
         <section>
-            <h2 class="textCenter">Presupuestos</h2>
+            <h1 class="textCenter">Presupuestos</h1>
             <article>
-                <form action="presupuestosmjw.php">
+                <form action="presupuestosmjw.php" method="post">
                     <div>
-                        <label for="name" class="textCenter">NOMBRES:</label>
-                        <input type="text" id="name" placeholder="Ingrese sus nombres" />
+                        <label for="name" class="textCenter">Nombres:</label>
+                        <input type="text" id="name" name="name" placeholder="Ingrese sus nombres" required />
                     </div>
                     <div>
-                        <label for="sname" class="textCenter">APELLIDOS:</label>
-                        <input type="text" id="sname" placeholder="Ingrese sus apellidos" />
+                        <label for="sname" class="textCenter">Apellidos:</label>
+                        <input type="text" id="sname" name="sname" placeholder="Ingrese sus apellidos" required />
                     </div>
                     <div>
-                        <label for="mail" class="textCenter">E-MAIL:</label>
-                        <input type="email" id="mail" placeholder="Ingrese su E-Mail" />
+                        <label for="mail" class="textCenter">E-Mail:</label>
+                        <input type="email" id="mail" name="mail" placeholder="Ingrese su E-Mail" required />
                     </div>
                     <div>
-                        <label for="cel" class="textCenter">TELEFONO:</label>
-                        <input type="number" id="cel" placeholder="Ingrese su numero celular" />
+                        <label for="cel" class="textCenter">Teléfono:</label>
+                        <input type="tel" id="cel" name="cel" placeholder="Ingrese su número celular" required />
                     </div>
                     <div>
-                        <label for="mensje" class="textCenter">DEJE SU CONSULTA:</label>
+                        <label for="mensje" class="textCenter">Deje su consulta:</label>
                     </div>
-                    <textarea id="mensje" rows="10" cols="30" placeholder="Ingrese su consulta"></textarea>
+                    <textarea id="mensje" name="mensje" rows="10" cols="30" placeholder="Ingrese su consulta" required></textarea>
                     <div>
                         <input type="reset" value="Borrar" class="boton__accion--s"/>
                         <input type="submit" value="Enviar" class="boton__accion--s"/>
@@ -74,16 +97,17 @@
         </section>
     </main>
     <!-- ends main -->
+
     <footer class="pie">
-        <h3 class="pie__titulo--l">Buscanos en nuestras redes</h3>
+        <h2 class="pie__titulo--l">Búscanos en nuestras redes</h2>
         <a href="https://www.whatsapp.com/?lang=es" target="_blank">
-            <img src="../assets/img/iconos/whatsapp ic.png" alt="Hablanos por WhatsApp" class="pie__icon--s">
+            <img src="../assets/img/iconos/whatsapp ic.png" alt="Háblanos por WhatsApp" class="pie__icon--s">
         </a>
         <a href="https://www.instagram.com/" target="_blank">
-            <img src="../assets/img/iconos/instagram ic.png" alt="Seguinos en Instagram" class="pie__icon--s">
+            <img src="../assets/img/iconos/instagram ic.png" alt="Síguenos en Instagram" class="pie__icon--s">
         </a>
         <a href="https://www.facebook.com/" target="_blank">
-            <img src="../assets/img/iconos/facebook ic.png" alt="Seguinos en Facebook" class="pie__icon--s">
+            <img src="../assets/img/iconos/facebook ic.png" alt="Síguenos en Facebook" class="pie__icon--s">
         </a>
     </footer>
     <!-- ends footer -->
