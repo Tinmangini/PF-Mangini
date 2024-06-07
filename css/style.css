@@ -72,11 +72,16 @@ nav ul {
   list-style: none;
   padding: 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
 }
 nav ul li {
-  margin: 0 20px;
+  margin: 0 10px;
+}
+@media (max-width: 768px) {
+  nav ul li {
+    margin: 5px;
+  }
 }
 nav ul li a {
   color: #ffffff;
@@ -85,6 +90,11 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: #8c8c8c;
+}
+@media (max-width: 768px) {
+  nav ul li a {
+    font-size: 1.5rem;
+  }
 }
 
 form {
@@ -180,18 +190,19 @@ form textarea {
 }
 
 .productos {
-  padding: 20px 20px;
+  padding: 2vw;
 }
 .productos .tarjetas {
   display: flex;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 2vw;
   background-color: #ffffff;
 }
 .productos .tarjetas .tarjeta__1,
 .productos .tarjetas .tarjeta__2,
 .productos .tarjetas .tarjeta__3 {
-  display: flex;
-  padding: 10px;
+  width: calc(33.333% - 2vw);
+  padding: 2vw;
 }
 .productos .tarjetas .tarjeta__1 .imgTarjeta__1,
 .productos .tarjetas .tarjeta__1 .imgTarjeta__2,
@@ -202,15 +213,12 @@ form textarea {
 .productos .tarjetas .tarjeta__3 .imgTarjeta__1,
 .productos .tarjetas .tarjeta__3 .imgTarjeta__2,
 .productos .tarjetas .tarjeta__3 .imgTarjeta__3 {
-  width: 50%;
+  width: 100%;
 }
 .productos .tarjetas .tarjeta__1--body,
 .productos .tarjetas .tarjeta__2--body,
 .productos .tarjetas .tarjeta__3--body {
-  padding: 30px;
-  display: grid;
-  justify-self: center;
-  align-items: center;
+  padding: 3vw;
   background-color: #ffffff;
 }
 .productos .tarjetas .tarjeta__1--tittle, .productos .tarjetas .tarjeta__1--precio,
@@ -220,7 +228,20 @@ form textarea {
 .productos .tarjetas .tarjeta__3--precio {
   color: #000000;
   background-color: #ffffff;
-  padding: 10px;
+}
+@media screen and (max-width: 768px) {
+  .productos .tarjetas .tarjeta__1,
+  .productos .tarjetas .tarjeta__2,
+  .productos .tarjetas .tarjeta__3 {
+    width: calc(50% - 2vw);
+  }
+}
+@media screen and (max-width: 480px) {
+  .productos .tarjetas .tarjeta__1,
+  .productos .tarjetas .tarjeta__2,
+  .productos .tarjetas .tarjeta__3 {
+    width: 100%;
+  }
 }
 
 .btn {
@@ -262,19 +283,25 @@ form textarea {
   .pie {
     width: 100%;
   }
-  .cuerpe__table--m,
-  .cuerpe__text--m,
-  .nosotrx__text--l {
-    font-size: 1.5rem;
-    line-height: 3rem;
+  .cuerpe__table--m h1,
+  .cuerpe__text--m h1,
+  .nosotrx__text--l h1 {
+    font-size: 1rem;
   }
-  .cuerpe__tittle--l,
-  .cuerpe__text--m,
-  .nosotrx__tittle--l {
-    width: 100%;
+  .cuerpe__table--m h2,
+  .cuerpe__text--m h2,
+  .nosotrx__text--l h2 {
+    font-size: 1rem;
   }
-  .boton__accion--s {
-    margin: 15px auto;
+  .cuerpe__table--m h3,
+  .cuerpe__text--m h3,
+  .nosotrx__text--l h3 {
+    font-size: 1rem;
+  }
+  .cuerpe__table--m span,
+  .cuerpe__text--m span,
+  .nosotrx__text--l span {
+    font-size: 1rem;
   }
 }
 @media (max-width: 480px) {
@@ -296,11 +323,29 @@ form textarea {
   form label {
     font-size: 1.5rem;
   }
-  .cuerpe__table--m,
-  .cuerpe__text--m,
-  .nosotrx__text--l {
+  .cuerpe__table--m h1,
+  .cuerpe__text--m h1,
+  .nosotrx__text--l h1 {
+    font-size: 1rem;
+  }
+  .cuerpe__table--m h2,
+  .cuerpe__text--m h2,
+  .nosotrx__text--l h2 {
+    font-size: 1rem;
+  }
+  .cuerpe__table--m h3,
+  .cuerpe__text--m h3,
+  .nosotrx__text--l h3 {
+    font-size: 1rem;
+  }
+  .cuerpe__table--m span,
+  .cuerpe__text--m span,
+  .nosotrx__text--l span {
     font-size: 1.2rem;
-    line-height: 2.5rem;
+  }
+  .cabezera {
+    flex-direction: column;
+    align-items: center;
   }
 }
 

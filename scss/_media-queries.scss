@@ -4,9 +4,11 @@
     nav ul li {
         margin: 0 10px;
     }
-        nav ul li a {
-            font-size: 1.5rem;
-        }
+
+    nav ul li a {
+        font-size: 1.5rem;
+    }
+
     form {
         width: 90%;
     }
@@ -18,23 +20,12 @@
     .cuerpe__table--m,
     .cuerpe__text--m,
     .nosotrx__text--l {
-        font-size: 1.5rem;
-        line-height: 3rem;
-    }
-
-    .cuerpe__tittle--l,
-    .cuerpe__text--m,
-    .nosotrx__tittle--l {
-        width: 100%;
-    }
-
-    .boton__accion--s {
-        margin: 15px auto;
+        @include responsive-text(1rem, 1rem, 1rem, 1rem);
     }
 }
 
 @media (max-width: 480px) {
-@include responsive-text(2rem, 1.5rem, 1rem, 1.2rem);
+    @include responsive-text(2rem, 1.5rem, 1rem, 1.2rem);
 
     nav ul li a {
         font-size: 1.2rem;
@@ -47,7 +38,11 @@
     .cuerpe__table--m,
     .cuerpe__text--m,
     .nosotrx__text--l {
-        font-size: 1.2rem;
-        line-height: 2.5rem;
+        @include responsive-text(1rem, 1rem, 1rem, 1.2rem);
+    }
+
+    .cabezera {
+        flex-direction: column;
+        align-items: center;
     }
 }

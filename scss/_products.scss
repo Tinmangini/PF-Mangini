@@ -1,30 +1,55 @@
 .productos {
-    padding: 20px 20px;
+    padding: 2vw; // Usamos unidades de vista para el relleno
+
     .tarjetas {
         display: flex;
-        gap: 10px;
+        flex-wrap: wrap; // Permitimos que las tarjetas se envuelvan en pantallas pequeñas
+        gap: 2vw; // Usamos unidades de vista para el espacio entre tarjetas
         background-color: #ffffff;
+
         .tarjeta__1,
         .tarjeta__2,
         .tarjeta__3 {
-            display: flex;
-            padding: 10px;
-        .imgTarjeta__1,
-        .imgTarjeta__2,
-        .imgTarjeta__3 {
-            width: 50%;
+            width: calc(33.333% - 2vw); // Calculamos el ancho de cada tarjeta para que haya tres en una fila
+            padding: 2vw;
+
+            .imgTarjeta__1,
+            .imgTarjeta__2,
+            .imgTarjeta__3 {
+                width: 100%; // La imagen ocupa todo el ancho de la tarjeta
+            }
+
+            &--body {
+                padding: 3vw;
+                background-color: #ffffff;
+            }
+
+            &--tittle,
+            &--precio {
+                // Estilos de texto
+                color: #000000;
+                background-color: #ffffff;
+            }
         }
-        &--body {
-            padding: 30px;
-            display: grid;
-            justify-self: center;
-            align-items: center;
-            background-color: #ffffff;
+    }
+
+    @media screen and (max-width: 768px) {
+        .tarjetas {
+            .tarjeta__1,
+            .tarjeta__2,
+            .tarjeta__3 {
+                width: calc(50% - 2vw); // En pantallas más pequeñas, mostramos dos tarjetas por fila
+            }
         }
-        &--tittle,
-        &--precio {
-            @include text-style(#000000, #ffffff);
-        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .tarjetas {
+            .tarjeta__1,
+            .tarjeta__2,
+            .tarjeta__3 {
+                width: 100%; // En dispositivos móviles, mostramos una tarjeta por fila
+            }
         }
     }
 }

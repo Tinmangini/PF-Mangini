@@ -5,20 +5,34 @@ nav {
     top: 0;
     padding: 10px 0;
     margin: 10px 0;
+    
     ul {
         list-style: none;
         padding: 0;
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
+        flex-wrap: wrap; // Permite que los elementos se envuelvan en dispositivos más pequeños
+
         li {
-            margin: 0 20px;
+            margin: 0 10px;
+            
+            // Ajustar el margen para dispositivos más pequeños
+            @media (max-width: 768px) {
+                margin: 5px;
+            }
+            
             a {
-            color: #ffffff;
-            text-decoration: none;
-            font-size: 2rem;
+                color: #ffffff;
+                text-decoration: none;
+                font-size: 2rem;
+                
                 &:hover {
-            color: #8c8c8c;
+                    color: #8c8c8c;
+                }
+                
+                // Ajustar el tamaño de la fuente para dispositivos más pequeños
+                @media (max-width: 768px) {
+                    font-size: 1.5rem;
                 }
             }
         }
