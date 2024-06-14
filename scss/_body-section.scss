@@ -1,32 +1,73 @@
 .cuerpe {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 10px;
-        .cuerpe__tittle--l,
-        .nosotrx__tittle--l {
-            text-align: center;
-            padding: 1px;
-            width: 90%;
-            margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+
+    .cuerpe__tittle--l,
+    .nosotrx__tittle--l {
+        text-align: center;
+        width: 80%;
+        margin: 1px auto;
+        padding: 1px;
+
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+            font-size: 1.5rem;
         }
-        .cuerpe__text--m,
-        .nosotrx__text--l {
-            text-align: center;
-            font-weight: 100;
-            line-height: 5rem;
-            font-size: 2rem;
-            margin: 10px;
-            opacity: 0.9;
-            padding: 10px;
+    }
+
+    .cuerpe__text--m,
+    .nosotrx__text--l {
+        text-align: justify;
+        line-height: 5rem;
+        font-size: 1.3rem;
+        margin: 1px;
+        opacity: 0.9;
+        padding: 1px;
+
+        @media only screen and (max-width: 768px) {
+            font-size: 1.5rem;
+            line-height: 3.5rem;
+            margin: 5px;
+            padding: 5px;
         }
-        .cuerpe__table--m {
-            text-align: center;
-            font-weight: 100;
-            line-height: 5rem;
-            font-size: 2rem;
-            margin: 20px auto;
-            opacity: 0.9;
-            border: none;
-            width: 80%;
+
+        @media only screen and (max-width: 480px) {
+            font-size: 1.2rem;
+            line-height: 2.5rem;
+            margin: 2px;
+            padding: 2px;
         }
+    }
+
+    .cuerpe__table--m {
+        text-align: center;
+        font-weight: 100;
+        line-height: 5rem;
+        font-size: 2rem;
+        margin: 20px auto;
+        opacity: 0.9;
+        border: none;
+        width: 80%;
+
+        @media only screen and (max-width: 768px) {
+            font-size: 1.5rem;
+            line-height: 3.5rem;
+            width: 100%;
+            margin: 10px auto;
+        }
+
+        @media only screen and (max-width: 480px) {
+            font-size: 1.2rem;
+            line-height: 2.5rem;
+            width: 100%;
+            margin: 5px auto;
+        }
+    }
+    > * {
+        flex: 1 1 200px;
+        box-sizing: border-box;
+    }
 }
